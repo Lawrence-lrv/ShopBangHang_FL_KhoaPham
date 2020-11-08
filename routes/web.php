@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[App\Http\Controllers\PageController::class, 'pages']);
+Route::get('/',[App\Http\Controllers\PageController::class, 'getIndex']);
+Route::get('/trang-chu',[App\Http\Controllers\PageController::class, 'getIndex']);
+Route::get('/loai_san_pham',[App\Http\Controllers\PageController::class, 'loaiSanpham']);
